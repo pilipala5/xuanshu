@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+<title id="title">小六壬 · 白瓷六宫盘</title>
+<desc id="desc">暖灰纸白背景上的俯视白瓷六宫盘，六宫顺序为大安、留连、速喜、赤口、小吉、空亡，中心为青绿指针。</desc>
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f4f2ec"/><stop offset=".54" stop-color="#eeeee8"/><stop offset="1" stop-color="#e5e6de"/></linearGradient>
+  <radialGradient id="paperlight" cx="29%" cy="18%" r="82%"><stop stop-color="#fffef9" stop-opacity=".7"/><stop offset="1" stop-color="#fffef9" stop-opacity="0"/></radialGradient>
+  <linearGradient id="porcelain-edge" x1=".08" y1="0" x2=".83" y2="1"><stop stop-color="#fffffa"/><stop offset=".42" stop-color="#edeee8"/><stop offset=".73" stop-color="#d6dbd1"/><stop offset="1" stop-color="#cbd0c6"/></linearGradient>
+  <linearGradient id="lip" x1=".22" y1="0" x2=".7" y2="1"><stop stop-color="#fffffd"/><stop offset=".44" stop-color="#f7f8f2"/><stop offset="1" stop-color="#e9ece3"/></linearGradient>
+  <radialGradient id="bowl" cx="44%" cy="35%" r="70%"><stop stop-color="#fdfdfa"/><stop offset=".67" stop-color="#f7f8f2"/><stop offset=".9" stop-color="#e9eee4"/><stop offset="1" stop-color="#dae0d5"/></radialGradient>
+  <linearGradient id="bevel" x1=".12" y1="0" x2=".8" y2="1"><stop stop-color="#cbd3c6"/><stop offset=".39" stop-color="#e8ede2"/><stop offset=".69" stop-color="#fffefa"/><stop offset="1" stop-color="#fffffc"/></linearGradient>
+  <linearGradient id="rimlight" x1=".1" y1="0" x2=".9" y2="1"><stop stop-color="#ffffff"/><stop offset=".5" stop-color="#fafbf6" stop-opacity=".35"/><stop offset="1" stop-color="#fafbf6" stop-opacity="0"/></linearGradient>
+  <linearGradient id="sage" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#64897b"/><stop offset=".32" stop-color="#466c5d"/><stop offset="1" stop-color="#23493d"/></linearGradient>
+  <linearGradient id="jade-front" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#6b9280"/><stop offset=".42" stop-color="#426c58"/><stop offset="1" stop-color="#244c3d"/></linearGradient>
+  <linearGradient id="jade-left" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#84a595"/><stop offset="1" stop-color="#4f7a67"/></linearGradient>
+  <linearGradient id="pivot" x1=".12" y1="0" x2=".85" y2="1"><stop stop-color="#fffefa"/><stop offset=".38" stop-color="#eff3e9"/><stop offset="1" stop-color="#cbd8c8"/></linearGradient>
+  <radialGradient id="pivot-inner" cx="30%" cy="27%" r="86%"><stop stop-color="#fbfdf7"/><stop offset=".72" stop-color="#e6eee0"/><stop offset="1" stop-color="#a9bcaa"/></radialGradient>
+  <filter id="papergrain"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  <filter id="soft-shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="27"/></filter>
+  <filter id="contact-shadow" x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur stdDeviation="8"/></filter>
+  <filter id="pointer-shadow" x="-80%" y="-30%" width="260%" height="170%"><feGaussianBlur stdDeviation="6"/></filter>
+  <clipPath id="bowlclip"><circle cx="600" cy="600" r="365"/></clipPath>
+  <g id="tick"><path d="M600 200V213" stroke="#8ba494" stroke-width="2.8" stroke-linecap="round"/><path d="M590 211H610" stroke="#aebcaf" stroke-width=".7" opacity=".7"/></g>
+</defs>
+<rect width="1200" height="1200" fill="url(#paper)"/>
+<rect width="1200" height="1200" fill="url(#paperlight)"/>
+<rect width="1200" height="1200" fill="#eeeee7" opacity=".16" filter="url(#papergrain)"/>
+<ellipse cx="625" cy="654" rx="415" ry="401" fill="#677665" opacity=".17" filter="url(#soft-shadow)"/>
+<ellipse cx="607" cy="631" rx="420" ry="418" fill="#5e6c58" opacity=".1" filter="url(#contact-shadow)"/>
+<circle cx="600" cy="611" r="426" fill="url(#porcelain-edge)"/>
+<circle cx="600" cy="603" r="426" fill="url(#lip)"/>
+<circle cx="600" cy="600" r="425" fill="none" stroke="#fffefa" stroke-width="1.9"/>
+<circle cx="600" cy="600" r="409" fill="none" stroke="#dbe1d6" stroke-width="1.1" opacity=".75"/>
+<circle cx="600" cy="600" r="397" fill="none" stroke="url(#rimlight)" stroke-width="15" opacity=".79"/>
+<circle cx="600" cy="600" r="377" fill="url(#bevel)"/>
+<circle cx="600" cy="600" r="369" fill="url(#bowl)"/>
+<circle cx="600" cy="600" r="367.5" fill="none" stroke="#cbd4c4" stroke-width="1.2" opacity=".54"/>
+<circle cx="600" cy="600" r="360" fill="none" stroke="#fefff9" stroke-width="1.5" opacity=".88"/>
+<g clip-path="url(#bowlclip)">
+  <path d="M600 600L967.5 600A367.5 367.5 0 0 1 783.75 918.28Z" fill="#e8eee3" opacity=".3"/>
+  <path d="M600 600L416.25 918.28A367.5 367.5 0 0 1 232.5 600Z" fill="#fdfef9" opacity=".33"/>
+  <path d="M600 600L416.25 281.72A367.5 367.5 0 0 1 783.75 281.72Z" fill="#fdfefa" opacity=".35"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M654 509L780.5 290M704 600H958M654 690L780.5 909M548 690L421.5 909M496 600H242M548 510L421.5 291" stroke="#ced7c8" stroke-width="1.4" opacity=".73"/>
+    <path d="M656 510L782.5 291M704 602H958M656 691L782.5 910M550 691L423.5 910M496 602H242M550 511L423.5 292" stroke="#fffffc" stroke-width="1.6" opacity=".9"/>
+  </g>
+</g>
+<g opacity=".9"><use href="#tick"/><use href="#tick" transform="rotate(60 600 600)"/><use href="#tick" transform="rotate(120 600 600)"/><use href="#tick" transform="rotate(180 600 600)"/><use href="#tick" transform="rotate(240 600 600)"/><use href="#tick" transform="rotate(300 600 600)"/></g>
+<g font-family="STSong,Songti SC,Noto Serif CJK SC,serif" font-size="35" font-weight="400" text-anchor="middle" letter-spacing="7">
+  <g fill="#ffffff" opacity=".95" transform="translate(1 2)"><text x="604" y="359">大安</text><text x="826" y="484">留连</text><text x="826" y="738">速喜</text><text x="604" y="866">赤口</text><text x="382" y="738">小吉</text><text x="382" y="484">空亡</text></g>
+  <g fill="#627365"><text x="604" y="359">大安</text><text x="826" y="484">留连</text><text x="826" y="738">速喜</text><text x="604" y="866">赤口</text><text x="382" y="738">小吉</text><text x="382" y="484">空亡</text></g>
+</g>
+<g fill="#a2b29f" font-family="Georgia,serif" font-size="11" letter-spacing="3" text-anchor="middle" opacity=".8"><text x="600" y="388">01</text><text x="823" y="513">02</text><text x="823" y="767">03</text><text x="600" y="895">04</text><text x="379" y="767">05</text><text x="379" y="513">06</text></g>
+<path d="M274 454A355 355 0 0 1 657 249" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity=".67"/>
+<path d="M681 256A355 355 0 0 1 796 304" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+<g transform="rotate(38 600 600)">
+  <path d="M600 362L633 598L600 782L566 598Z" transform="translate(7 10)" fill="#485b45" opacity=".2" filter="url(#pointer-shadow)"/>
+  <path d="M600 764L577 606Q577 590 600 572Q623 590 623 606Z" fill="url(#sage)"/>
+  <path d="M600 764L600 590L579 605Z" fill="#a1b7a4" opacity=".48"/>
+  <path d="M600 764L600 590L622 605Z" fill="#2e5847" opacity=".64"/>
+  <path d="M600 355L633 588Q624 608 600 623Q576 608 567 588Z" fill="url(#jade-front)"/>
+  <path d="M600 355L600 623Q576 608 567 588Z" fill="url(#jade-left)"/>
+  <path d="M600 355L600 608" stroke="#c1d2bd" stroke-width=".9" opacity=".8"/>
+  <path d="M600 355L567 588Q576 608 600 623" fill="none" stroke="#bfd0b9" stroke-width="1.2" opacity=".66"/>
+  <path d="M600 355L633 588Q624 608 600 623" fill="none" stroke="#2e5443" stroke-width="1.1" opacity=".76"/>
+</g>
+<circle cx="603" cy="608" r="38" fill="#526949" opacity=".15" filter="url(#contact-shadow)"/>
+<circle cx="600" cy="601" r="38" fill="#b6c9b4"/>
+<circle cx="600" cy="598" r="38" fill="url(#pivot)" stroke="#f6fcf0" stroke-width="1.2"/>
+<circle cx="600" cy="598" r="27.5" fill="url(#pivot-inner)" stroke="#d0dec9" stroke-width="1.15"/>
+<circle cx="600" cy="598" r="23.5" fill="none" stroke="#fffff7" stroke-width="1.1" opacity=".76"/>
+<path d="M578 588A24 24 0 0 1 607 575" fill="none" stroke="#fffffc" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+<circle cx="600" cy="598" r="5.5" fill="#66846a" opacity=".75"/>
+<circle cx="599.3" cy="596.7" r="2.3" fill="#ccdabe" opacity=".8"/>
+<path d="M295 310A421 421 0 0 1 702 187" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity=".81"/>
+<path d="M924 869A418 418 0 0 1 722 1000" fill="none" stroke="#bdc7b8" stroke-width="1.1" opacity=".43"/>
+</svg>

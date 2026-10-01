@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">墨枝梅花</title>
+  <desc id="desc">斜伸的墨色梅枝上绽开白粉梅花，花瓣有立体的浮雕光影，暖白留白中右下排列精确六爻，旁有一枚朱红小印。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf6"/><stop offset=".65" stop-color="#f4f0e6"/><stop offset="1" stop-color="#ede9df"/></linearGradient>
+    <radialGradient id="wash" cx=".25" cy=".36" r=".6"><stop stop-color="#e0dbce" stop-opacity=".4"/><stop offset="1" stop-color="#e0dbce" stop-opacity="0"/></radialGradient>
+    <linearGradient id="branch" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#182523"/><stop offset=".45" stop-color="#344441"/><stop offset=".62" stop-color="#1c2c29"/><stop offset="1" stop-color="#68716b"/></linearGradient>
+    <linearGradient id="petalA" x1=".1" y1="0" x2=".85" y2="1"><stop stop-color="#fffef9"/><stop offset=".32" stop-color="#fffcf6"/><stop offset=".66" stop-color="#f0dfda"/><stop offset="1" stop-color="#cfaba5"/></linearGradient>
+    <linearGradient id="petalB" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffcf5"/><stop offset=".47" stop-color="#f8e9e4"/><stop offset=".8" stop-color="#e6c5c0"/><stop offset="1" stop-color="#c79691"/></linearGradient>
+    <linearGradient id="petalC" x1=".1" y1="1" x2=".95" y2="0"><stop stop-color="#b98e86"/><stop offset=".4" stop-color="#f2dcd4"/><stop offset=".78" stop-color="#fff9f1"/><stop offset="1" stop-color="#fffdf8"/></linearGradient>
+    <linearGradient id="bud" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff3e9"/><stop offset=".3" stop-color="#e7c0b5"/><stop offset=".7" stop-color="#c0847b"/><stop offset="1" stop-color="#6c4c47"/></linearGradient>
+    <radialGradient id="flowerHeart"><stop stop-color="#70594a"/><stop offset=".45" stop-color="#b49572"/><stop offset=".85" stop-color="#d3b898"/><stop offset="1" stop-color="#a6896d"/></radialGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#708379"/><stop offset=".5" stop-color="#374a44"/><stop offset="1" stop-color="#1d302a"/></linearGradient>
+    <filter id="paperGrain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".64" numOctaves="3" seed="33"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".035"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+    <filter id="branchGrain" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="3" seed="8"/><feColorMatrix values=".2 0 0 0 .15 0 .2 0 0 .18 0 0 .2 0 .16 0 0 0 .14 0"/><feComposite in2="SourceAlpha" operator="in"/><feBlend in="SourceGraphic" mode="multiply"/></filter>
+    <filter id="flowerShadow" x="-50%" y="-50%" width="200%" height="220%"><feDropShadow dx="6" dy="10" stdDeviation="5" flood-color="#534c42" flood-opacity=".21"/></filter>
+    <filter id="petalShadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="2" dy="4" stdDeviation="2" flood-color="#967a70" flood-opacity=".2"/></filter>
+    <filter id="blur"><feGaussianBlur stdDeviation="15"/></filter>
+    <filter id="inkBlur"><feGaussianBlur stdDeviation="1.1"/></filter>
+    <g id="petal">
+      <path d="M0 13C-19 1-45-21-48-48C-51-70-37-89-19-90C-2-91 6-80 10-75C21-87 42-90 55-78C75-58 64-31 47-16C33-3 15 5 0 13Z" fill="url(#petalA)" stroke="#d7b8ae" stroke-width=".65"/>
+      <path d="M1 5C-6-19-5-38-17-67M3 2C16-19 35-31 41-57" fill="none" stroke="#d7b7af" stroke-width=".8" stroke-opacity=".62"/>
+      <path d="M-35-47C-34-71-20-81-8-79M25-75C42-83 56-69 58-58" fill="none" stroke="#fffef8" stroke-width="3" stroke-linecap="round" stroke-opacity=".83"/>
+    </g>
+    <g id="stamens" fill="none" stroke="#937a58" stroke-width="1.1" stroke-linecap="round">
+      <path d="M0 0L-34-18M0 0L-28-34M0 0L-12-42M0 0L8-39M0 0L28-33M0 0L39-13M0 0L36 9M0 0L22 30M0 0L1 37M0 0L-22 30M0 0L-35 10M0 0L-17-22M0 0L14-22M0 0L21 12M0 0L-10 23"/>
+      <g fill="#c7a365" stroke="#8f734d" stroke-width=".75"><circle cx="-34" cy="-18" r="3"/><circle cx="-28" cy="-34" r="3"/><circle cx="-12" cy="-42" r="2.8"/><circle cx="8" cy="-39" r="3"/><circle cx="28" cy="-33" r="3"/><circle cx="39" cy="-13" r="3.2"/><circle cx="36" cy="9" r="2.7"/><circle cx="22" cy="30" r="3"/><circle cx="1" cy="37" r="2.7"/><circle cx="-22" cy="30" r="3"/><circle cx="-35" cy="10" r="3.1"/><circle cx="-17" cy="-22" r="2.5"/><circle cx="14" cy="-22" r="2.4"/><circle cx="21" cy="12" r="2.5"/><circle cx="-10" cy="23" r="2.5"/></g>
+      <circle r="12" fill="url(#flowerHeart)" stroke="#c3a88a" stroke-width=".8"/>
+      <circle cx="-3" cy="-3" r="4" fill="#d2b898" stroke="none" opacity=".7"/>
+    </g>
+    <g id="bloom" filter="url(#flowerShadow)">
+      <g filter="url(#petalShadow)"><use href="#petal" transform="rotate(-8)"/><use href="#petal" transform="rotate(64)"/><use href="#petal" transform="rotate(136)"/><use href="#petal" transform="rotate(208)"/><use href="#petal" transform="rotate(280)"/></g>
+      <path d="M-12-7C-16-29-31-39-36-34C-41-30-35-17-16 0M7-10C24-29 37-26 38-18C38-10 25-3 11 2M2 11C9 33 0 39-7 33C-14 26-9 17-4 10" fill="url(#petalB)" opacity=".82"/>
+      <use href="#stamens"/>
+    </g>
+    <g id="sideBloom" filter="url(#flowerShadow)">
+      <path d="M-42 20C-72 0-72-41-49-52C-25-62-8-38 0-13C-1-45 19-62 39-55C65-46 61-17 45 6C69-4 83 8 80 27C77 48 44 58 19 49Z" fill="url(#petalC)" stroke="#d1aea4" stroke-width=".8"/>
+      <path d="M-29 34C-62 27-72 5-57-8C-40-24-13-14 9 17C1-16 10-43 32-41C56-40 60-12 39 23C65 8 83 20 70 39C60 56 31 64 6 53Z" fill="url(#petalA)" stroke="#dfc3b8" stroke-width=".8"/>
+      <path d="M-9 35C-37 26-45 6-29-1C-13-9 5 10 11 33C26 8 45 3 50 18C53 33 34 49 16 50Z" fill="url(#petalB)"/>
+      <path d="M-28-34C-12-22-5-8 4 15M26-33C19-16 17-2 15 19" fill="none" stroke="#c99f96" stroke-opacity=".5" stroke-width="1"/>
+      <g transform="translate(9 37) scale(.64 .48)"><use href="#stamens"/></g>
+      <path d="M-10 48C-6 66 9 71 27 57L16 50Z" fill="#514d3b"/>
+    </g>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#paper)" filter="url(#paperGrain)"/>
+  <rect width="1200" height="1200" fill="url(#wash)"/>
+  <!-- Broad paper shadow creates relief without filling the right-hand void. -->
+  <g fill="none" stroke="#5b6258" opacity=".085" filter="url(#blur)" transform="translate(20 26)">
+    <path d="M-70 1130C66 990 178 856 265 714S390 474 528 299S677 146 760 106" stroke-width="32"/>
+    <path d="M245 752C351 707 410 633 490 585S582 537 657 527" stroke-width="14"/>
+  </g>
+  <!-- The trunk has an irregular calligraphic silhouette and split dry-brush bark. -->
+  <g fill="url(#branch)" filter="url(#branchGrain)">
+    <path d="M-68 1168C21 1078 105 963 173 879C231 806 268 730 305 651C351 552 388 456 473 361C541 284 600 207 680 165C709 149 741 120 769 105C734 140 713 163 685 182C613 232 557 302 493 382C413 480 377 574 337 670C300 757 258 832 204 899C134 987 70 1090 12 1175Z"/>
+    <path d="M261 758C315 721 356 704 390 668C422 634 455 614 487 590C542 550 594 534 665 526C600 541 556 563 507 600C470 628 441 653 410 686C374 725 328 751 276 782Z"/>
+    <path d="M384 504C345 458 322 414 301 378C278 337 265 312 228 285C272 307 288 332 313 369C340 409 354 442 395 483Z"/>
+    <path d="M452 399C488 402 522 388 548 368C579 345 605 345 641 342C609 351 588 356 564 379C533 407 493 422 449 416Z"/>
+    <path d="M541 289C527 260 531 225 514 195C505 178 493 171 481 164C504 168 517 179 529 199C549 233 546 247 554 275Z"/>
+    <path d="M645 204C655 185 665 171 667 147C670 125 665 108 663 90C678 109 681 130 678 151C676 174 664 193 655 211Z"/>
+    <path d="M435 637C440 601 422 579 416 550C410 519 416 496 416 482C422 509 421 525 428 546C437 573 457 600 449 626Z"/>
+    <path d="M219 881C231 904 265 924 284 958C299 986 311 1009 321 1037C300 1009 291 990 272 964C252 938 228 923 206 901Z"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M1 1110C79 1023 133 943 187 874C244 800 278 740 319 649C353 573 388 473 460 388" stroke="#909088" stroke-opacity=".31" stroke-width="3"/>
+    <path d="M90 1045C161 950 171 941 212 884M249 810C273 767 279 741 296 711M332 625C348 573 363 550 375 517M406 447C445 390 469 371 497 336" stroke="#151e1c" stroke-opacity=".76" stroke-width="4"/>
+    <path d="M174 913L186 889M226 833L244 799M298 714L311 685M359 568L370 541M429 427L445 409M500 333L513 317" stroke="#bec0b4" stroke-opacity=".22" stroke-width="1.5"/>
+    <path d="M293 755C327 730 365 714 392 685M417 658C449 626 475 610 511 586" stroke="#8e9587" stroke-opacity=".27" stroke-width="2"/>
+    <path d="M393 487C354 443 341 414 325 391M486 389C523 390 533 380 558 366M557 274C591 224 620 206 650 187" stroke="#8e9587" stroke-opacity=".25" stroke-width="1.6"/>
+  </g>
+  <!-- Sparse ink leaves, sculpted along the branch rather than a repetitive halo. -->
+  <g fill="url(#leaf)" stroke="#334a3f" stroke-width=".7">
+    <path d="M326 685C311 647 278 635 254 627C268 657 294 685 326 685Z"/>
+    <path d="M402 464C390 437 394 410 405 386C422 419 419 445 402 464Z"/>
+    <path d="M527 594C550 566 577 563 603 568C578 590 555 600 527 594Z"/>
+    <path d="M620 235C598 218 587 194 589 167C617 184 631 207 620 235Z"/>
+    <path d="M297 964C311 943 333 934 354 935C341 961 320 971 297 964Z"/>
+  </g>
+  <g fill="none" stroke="#9dafa0" stroke-opacity=".35" stroke-width="1">
+    <path d="M324 682L265 638M402 458L404 397M536 590L592 572M618 229L595 179M303 960L344 941"/>
+  </g>
+  <!-- Five blooms of different scale and viewpoint, individually oriented. -->
+  <use href="#bloom" transform="translate(383 540) rotate(-21) scale(1.28)"/>
+  <use href="#sideBloom" transform="translate(538 365) rotate(18) scale(.95)"/>
+  <use href="#bloom" transform="translate(598 245) rotate(13) scale(.84)"/>
+  <use href="#bloom" transform="translate(293 746) rotate(40) scale(.69)"/>
+  <use href="#sideBloom" transform="translate(475 600) rotate(-27) scale(.84)"/>
+  <!-- Unopened buds and their short sepals. -->
+  <g>
+    <path d="M660 180L696 153M306 379L280 355M533 205L532 173M654 530L690 518" fill="none" stroke="#46514a" stroke-width="3" stroke-linecap="round"/>
+    <g transform="translate(701 145) rotate(35)"><path d="M-12 12C-28-1-20-27-7-30C8-34 24-12 15 4C11 13 4 18-12 12Z" fill="url(#bud)" stroke="#bf9687" stroke-width=".8"/><path d="M-11 9L-15 20 0 19 11 8 1 12Z" fill="#4b5544"/><path d="M-6-26C1-16 3-4 0 10" fill="none" stroke="#a36c66" stroke-opacity=".5" stroke-width="1"/></g>
+    <g transform="translate(273 349) rotate(-48) scale(.88)"><path d="M-12 12C-26-3-20-24-7-29C8-34 23-13 15 4C10 15 1 18-12 12Z" fill="url(#bud)"/><path d="M-12 7L-16 19 0 20 12 8 0 12Z" fill="#4b5544"/></g>
+    <g transform="translate(531 166) rotate(-10) scale(.64)"><path d="M-12 12C-26-3-20-24-7-29C8-34 23-13 15 4C10 15 1 18-12 12Z" fill="url(#bud)"/><path d="M-12 7L-16 19 0 20 12 8 0 12Z" fill="#4b5544"/></g>
+    <g transform="translate(698 514) rotate(78) scale(.72)"><path d="M-12 12C-26-3-20-24-7-29C8-34 23-13 15 4C10 15 1 18-12 12Z" fill="url(#bud)"/><path d="M-12 7L-16 19 0 20 12 8 0 12Z" fill="#4b5544"/></g>
+  </g>
+  <!-- Fallen petal, a quiet foreground detail. -->
+  <path d="M493 925C478 911 479 894 496 895C512 896 528 912 527 927C516 932 504 931 493 925Z" fill="url(#petalB)" stroke="#ddc4b8" stroke-width=".7" transform="rotate(18 503 914)"/>
+  <path d="M491 902C503 909 513 916 521 925" fill="none" stroke="#fffaf0" stroke-width="1.2"/>
+  <!-- Six exact yao rows: 水火既济, top to bottom yin, yang, yin, yang, yin, yang. -->
+  <g fill="#3a4943" transform="translate(846 772)">
+    <rect x="0" y="0" width="63" height="9" rx=".6"/><rect x="86" y="0" width="63" height="9" rx=".6"/>
+    <rect x="0" y="30" width="149" height="9" rx=".6"/>
+    <rect x="0" y="60" width="63" height="9" rx=".6"/><rect x="86" y="60" width="63" height="9" rx=".6"/>
+    <rect x="0" y="90" width="149" height="9" rx=".6"/>
+    <rect x="0" y="120" width="63" height="9" rx=".6"/><rect x="86" y="120" width="63" height="9" rx=".6"/>
+    <rect x="0" y="150" width="149" height="9" rx=".6"/>
+  </g>
+  <!-- A small hand-cut red seal; no caption or slogan. -->
+  <g transform="translate(1020 932) rotate(-4)">
+    <path d="M0 3L48 0 52 47 4 51Z" fill="#ad3d32" opacity=".89"/>
+    <path d="M5 7L43 5 46 43 8 46Z" fill="none" stroke="#f4eadd" stroke-width="1.4" opacity=".86"/>
+    <path d="M15 12V36M10 20H22M10 27L21 35M28 12H39M27 19H39M28 12V36M34 14V36M25 28H40M30 35H40" fill="none" stroke="#f3e7d7" stroke-width="2.6" stroke-linecap="square"/>
+    <path d="M0 16L4 15M49 29L52 30M17 48L20 47" stroke="#f3e8dc" stroke-width="2"/>
+  </g>
+  <g fill="#47594d" opacity=".13"><circle cx="195" cy="791" r="2"/><circle cx="214" cy="795" r="1.3"/><circle cx="183" cy="809" r="1.7"/><circle cx="430" cy="290" r="1.7"/><circle cx="447" cy="282" r="1"/></g>
+</svg>

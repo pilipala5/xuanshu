@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">四柱玉简</title>
+  <desc id="desc">暖白纸上四根高低错落的青玉和白玉玉简，分别镌刻年、月、日、时，细石纹和铜环映出柔和光影。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf7"/><stop offset=".52" stop-color="#f3eee1"/><stop offset="1" stop-color="#e8e2d4"/></linearGradient>
+    <radialGradient id="light" cx=".25" cy=".13" r=".9"><stop stop-color="#fffef8" stop-opacity=".9"/><stop offset="1" stop-color="#fffef8" stop-opacity="0"/></radialGradient>
+    <linearGradient id="jade1" x1="0" y1="0" x2="1" y2=".14"><stop stop-color="#99b8a3"/><stop offset=".1" stop-color="#e2e7d1"/><stop offset=".4" stop-color="#bacdb1"/><stop offset=".78" stop-color="#85a790"/><stop offset="1" stop-color="#618777"/></linearGradient>
+    <linearGradient id="jade2" x1="0" y1="0" x2="1" y2=".1"><stop stop-color="#c8cdbb"/><stop offset=".12" stop-color="#fffdf0"/><stop offset=".45" stop-color="#e9edda"/><stop offset=".77" stop-color="#d8dfc8"/><stop offset="1" stop-color="#b2bcac"/></linearGradient>
+    <linearGradient id="jade3" x1="0" y1="0" x2="1" y2=".23"><stop stop-color="#527f6c"/><stop offset=".1" stop-color="#a5c6b0"/><stop offset=".38" stop-color="#789e83"/><stop offset=".76" stop-color="#527e68"/><stop offset="1" stop-color="#335d50"/></linearGradient>
+    <linearGradient id="jade4" x1="0" y1="0" x2="1" y2=".05"><stop stop-color="#a2b4a8"/><stop offset=".14" stop-color="#e7edda"/><stop offset=".48" stop-color="#c0d0ba"/><stop offset=".8" stop-color="#9cbba2"/><stop offset="1" stop-color="#769c88"/></linearGradient>
+    <linearGradient id="stoneTop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f5dc"/><stop offset=".4" stop-color="#c0d5ba"/><stop offset="1" stop-color="#638574"/></linearGradient>
+    <linearGradient id="whiteTop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffff5"/><stop offset="1" stop-color="#bdc5ad"/></linearGradient>
+    <linearGradient id="darkEdge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#769980"/><stop offset="1" stop-color="#2e5548"/></linearGradient>
+    <linearGradient id="bronze" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6c5031"/><stop offset=".22" stop-color="#d2aa68"/><stop offset=".46" stop-color="#f1d69c"/><stop offset=".61" stop-color="#a7834b"/><stop offset="1" stop-color="#63452c"/></linearGradient>
+    <linearGradient id="bronzeDark" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4a3c29"/><stop offset=".3" stop-color="#b89756"/><stop offset=".72" stop-color="#775c35"/><stop offset="1" stop-color="#d0ae72"/></linearGradient>
+    <radialGradient id="stoneBloom"><stop stop-color="#eff5d9" stop-opacity=".47"/><stop offset="1" stop-color="#eff5d9" stop-opacity="0"/></radialGradient>
+    <filter id="paperGrain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".67" numOctaves="3" seed="11"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".035"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+    <filter id="jadeGrain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".014 .09" numOctaves="3" seed="23"/><feColorMatrix values=".2 0 0 0 .6 0 .2 0 0 .7 0 0 .2 0 .57 0 0 0 .12 0"/><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+    <filter id="blur"><feGaussianBlur stdDeviation="15"/></filter>
+    <filter id="softShadow" x="-40%" y="-15%" width="220%" height="160%"><feDropShadow dx="18" dy="26" stdDeviation="13" flood-color="#375047" flood-opacity=".2"/></filter>
+    <filter id="engraved" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="1" dy="2" stdDeviation=".6" flood-color="#f8f6dd" flood-opacity=".7"/><feDropShadow dx="-1" dy="-1" stdDeviation=".5" flood-color="#24493d" flood-opacity=".8"/></filter>
+    <clipPath id="clip1"><path d="M223 341Q223 321 240 318L330 297Q348 293 353 311L370 958Q370 978 352 984L253 1003Q234 1007 231 985Z"/></clipPath>
+    <clipPath id="clip2"><path d="M414 264Q414 245 432 241L529 219Q548 215 553 234L568 916Q568 938 550 942L446 961Q425 965 424 944Z"/></clipPath>
+    <clipPath id="clip3"><path d="M615 183Q615 164 633 161L728 142Q747 138 750 158L770 967Q770 988 751 992L648 1011Q628 1015 626 994Z"/></clipPath>
+    <clipPath id="clip4"><path d="M819 392Q819 373 835 370L928 350Q947 346 950 364L967 992Q968 1013 949 1018L851 1037Q832 1041 831 1020Z"/></clipPath>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#paper)" filter="url(#paperGrain)"/>
+  <rect width="1200" height="1200" fill="url(#light)"/>
+  <g opacity=".2" fill="#657265" filter="url(#blur)">
+    <path d="M250 961L351 956 542 1106 399 1132Z"/>
+    <path d="M448 932L552 917 746 1091 622 1117Z"/>
+    <path d="M649 982L751 969 944 1111 815 1141Z"/>
+    <path d="M850 1003L948 990 1118 1093 1004 1129Z"/>
+  </g>
+  <ellipse cx="609" cy="1052" rx="347" ry="35" fill="#657367" opacity=".1" filter="url(#blur)"/>
+  <!-- Year: moss jade with a softened trapezoidal edge. -->
+  <g filter="url(#softShadow)">
+    <path d="M330 297L349 302Q366 306 368 323L386 950Q387 974 370 980L352 984Z" fill="#517762"/>
+    <path d="M240 318L330 297 350 303 258 326 223 342Q221 326 240 318Z" fill="url(#stoneTop)"/>
+    <path d="M223 341Q223 321 240 318L330 297Q348 293 353 311L370 958Q370 978 352 984L253 1003Q234 1007 231 985Z" fill="url(#jade1)" filter="url(#jadeGrain)"/>
+    <g clip-path="url(#clip1)">
+      <ellipse cx="276" cy="575" rx="91" ry="164" fill="url(#stoneBloom)"/>
+      <path d="M190 387C253 429 255 475 293 508S321 552 398 566M200 776C251 741 255 764 302 745S325 699 401 681" fill="none" stroke="#edf1d7" stroke-opacity=".47" stroke-width="3"/>
+      <path d="M245 336C284 388 262 414 289 450S304 479 326 516M248 813C278 858 297 891 300 970" fill="none" stroke="#5c886e" stroke-opacity=".25" stroke-width="1.7"/>
+      <path d="M274 463C290 431 276 398 292 367M296 789C328 787 343 813 383 804" fill="none" stroke="#f4f5db" stroke-opacity=".45" stroke-width="1"/>
+      <path d="M223 343L237 986" stroke="#fffbe6" stroke-opacity=".59" stroke-width="3"/>
+      <path d="M348 317L365 959" stroke="#375f4a" stroke-opacity=".4" stroke-width="2"/>
+      <path d="M251 385L325 370M260 920L340 905" stroke="#617f65" stroke-opacity=".22" stroke-width="1"/>
+    </g>
+    <text x="296" y="649" text-anchor="middle" font-family="Songti SC,STSong,Noto Serif CJK SC,serif" font-size="68" fill="#547460" filter="url(#engraved)">年</text>
+    <path d="M274 689L324 681M279 700L320 693" stroke="#627c62" stroke-opacity=".33" stroke-width="1.4"/>
+  </g>
+  <!-- Month: translucent ivory jade, subtle grey-green inclusions. -->
+  <g filter="url(#softShadow)">
+    <path d="M529 219L548 224Q563 228 566 246L582 909Q582 931 568 936L550 942Z" fill="#a5b19d"/>
+    <path d="M432 241L529 219 549 225 450 249 414 265Q415 247 432 241Z" fill="url(#whiteTop)"/>
+    <path d="M414 264Q414 245 432 241L529 219Q548 215 553 234L568 916Q568 938 550 942L446 961Q425 965 424 944Z" fill="url(#jade2)" filter="url(#jadeGrain)"/>
+    <g clip-path="url(#clip2)">
+      <path d="M401 384C466 404 474 453 503 473S526 524 590 548M405 651C456 684 484 712 495 770S547 808 587 846" fill="none" stroke="#a1b69b" stroke-opacity=".29" stroke-width="2.5"/>
+      <path d="M440 515C451 542 431 588 472 620S481 656 515 675M482 453C509 440 521 445 541 425" fill="none" stroke="#fffff4" stroke-opacity=".76" stroke-width="4"/>
+      <path d="M417 269L430 943" stroke="#fffef4" stroke-opacity=".77" stroke-width="3"/>
+      <path d="M549 243L563 914" stroke="#899983" stroke-opacity=".35" stroke-width="2"/>
+      <ellipse cx="506" cy="363" rx="70" ry="117" fill="url(#stoneBloom)"/>
+      <path d="M447 306L528 289M458 879L537 864" stroke="#899c80" stroke-opacity=".19" stroke-width="1"/>
+    </g>
+    <text x="490" y="590" text-anchor="middle" font-family="Songti SC,STSong,Noto Serif CJK SC,serif" font-size="70" fill="#929f83" filter="url(#engraved)">月</text>
+    <path d="M468 631L518 624M472 642L513 636" stroke="#89977a" stroke-opacity=".32" stroke-width="1.4"/>
+  </g>
+  <!-- Day: darker celadon, the tallest central slip. -->
+  <g filter="url(#softShadow)">
+    <path d="M728 142L747 149Q761 154 765 170L785 959Q787 979 770 985L751 992Z" fill="url(#darkEdge)"/>
+    <path d="M633 161L728 142 748 149 650 170 615 184Q615 166 633 161Z" fill="url(#stoneTop)"/>
+    <path d="M615 183Q615 164 633 161L728 142Q747 138 750 158L770 967Q770 988 751 992L648 1011Q628 1015 626 994Z" fill="url(#jade3)" filter="url(#jadeGrain)"/>
+    <g clip-path="url(#clip3)">
+      <ellipse cx="649" cy="361" rx="80" ry="128" fill="url(#stoneBloom)"/>
+      <ellipse cx="715" cy="846" rx="69" ry="105" fill="url(#stoneBloom)"/>
+      <path d="M601 309C655 331 661 380 693 410S725 417 779 454M599 785C656 762 667 820 705 843S755 872 789 849" fill="none" stroke="#d0dfb6" stroke-opacity=".32" stroke-width="3.5"/>
+      <path d="M645 227C657 272 646 307 672 327S678 368 693 401M640 698C655 717 656 749 682 765S714 795 729 831" fill="none" stroke="#305a43" stroke-opacity=".28" stroke-width="1.8"/>
+      <path d="M651 725C680 724 689 695 702 678M694 411C693 430 685 454 697 477" fill="none" stroke="#dde9c5" stroke-opacity=".33" stroke-width="1"/>
+      <path d="M619 188L632 991" stroke="#d3e6bf" stroke-opacity=".65" stroke-width="3"/>
+      <path d="M746 168L765 966" stroke="#244c3e" stroke-opacity=".5" stroke-width="2"/>
+      <path d="M649 222L724 207M663 938L743 922" stroke="#1f4f3b" stroke-opacity=".22" stroke-width="1"/>
+    </g>
+    <text x="690" y="593" text-anchor="middle" font-family="Songti SC,STSong,Noto Serif CJK SC,serif" font-size="73" fill="#315744" filter="url(#engraved)">日</text>
+    <path d="M668 635L718 627M672 646L713 640" stroke="#30533e" stroke-opacity=".48" stroke-width="1.4"/>
+  </g>
+  <!-- Hour: pale blue-green jade, slightly lower and narrower. -->
+  <g filter="url(#softShadow)">
+    <path d="M928 350L947 356Q961 360 965 379L982 985Q984 1005 967 1013L949 1018Z" fill="#729580"/>
+    <path d="M835 370L928 350 948 357 853 378 819 393Q819 375 835 370Z" fill="url(#stoneTop)"/>
+    <path d="M819 392Q819 373 835 370L928 350Q947 346 950 364L967 992Q968 1013 949 1018L851 1037Q832 1041 831 1020Z" fill="url(#jade4)" filter="url(#jadeGrain)"/>
+    <g clip-path="url(#clip4)">
+      <path d="M805 466C851 494 872 537 901 546S941 580 980 594M816 819C869 807 881 841 910 862S940 889 983 888" fill="none" stroke="#f4f4dc" stroke-opacity=".5" stroke-width="3"/>
+      <path d="M870 467C869 438 887 420 879 381M878 847C875 875 883 918 902 962" fill="none" stroke="#729d83" stroke-opacity=".27" stroke-width="1.7"/>
+      <ellipse cx="886" cy="685" rx="62" ry="112" fill="url(#stoneBloom)"/>
+      <path d="M823 396L837 1017" stroke="#f2f7df" stroke-opacity=".68" stroke-width="3"/>
+      <path d="M946 373L963 992" stroke="#4e775f" stroke-opacity=".36" stroke-width="2"/>
+      <path d="M852 432L926 417M865 961L940 947" stroke="#658468" stroke-opacity=".2" stroke-width="1"/>
+    </g>
+    <text x="895" y="702" text-anchor="middle" font-family="Songti SC,STSong,Noto Serif CJK SC,serif" font-size="68" fill="#67856b" filter="url(#engraved)">时</text>
+    <path d="M875 744L925 736M879 755L920 749" stroke="#5f7d60" stroke-opacity=".38" stroke-width="1.4"/>
+  </g>
+  <!-- Small suspension hardware, aged metal rather than ornament rings. -->
+  <g fill="none" stroke="url(#bronze)" stroke-linecap="round">
+    <path d="M474 239C464 213 478 198 491 200C509 202 512 222 499 237" stroke-width="8"/>
+    <path d="M675 164C665 138 676 119 691 122C707 126 712 146 699 162" stroke-width="8"/>
+    <path d="M474 239C465 215 479 201 491 203M675 164C668 140 679 122 691 125" stroke="#fff0c3" stroke-opacity=".55" stroke-width="1.4"/>
+  </g>
+  <g transform="translate(204 344)">
+    <path d="M26 0C-1 29 1 70-8 102" fill="none" stroke="#65503a" stroke-width="3"/>
+    <path d="M-8 102L-18 122" stroke="url(#bronze)" stroke-width="3"/>
+    <path d="M-18 121L-32 137 -26 165 -4 170 7 146Z" fill="url(#bronzeDark)" stroke="#84683f" stroke-width="1"/>
+    <path d="M-18 131L-25 141 -20 158 -8 161 -1 147Z" fill="none" stroke="#e0bb78" stroke-opacity=".6" stroke-width="1.5"/>
+    <circle cx="-15" cy="147" r="4" fill="#554732" stroke="#c4a064" stroke-width="1.5"/>
+  </g>
+  <path d="M108 1087C279 1079 414 1082 521 1090" fill="none" stroke="#bfbdab" stroke-opacity=".35" stroke-width="1"/>
+</svg>
