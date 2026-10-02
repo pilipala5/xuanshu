@@ -104,6 +104,7 @@ export function SiteHeader({ backHref, title }: { backHref?: string; title?: str
                 <hr />
                 <Link href="/history" onClick={() => setMenuOpen(false)}><span>时</span><b>历史记录</b><small>仅存本机</small><i aria-hidden="true">→</i></Link>
                 <Link href="/#about" onClick={() => setMenuOpen(false)}><span>玄</span><b>关于玄枢</b><small>规则与边界</small><i aria-hidden="true">→</i></Link>
+                <Link href="/#support" onClick={() => setMenuOpen(false)}><span aria-hidden="true">茶</span><b>支持为爱发电</b><small>自愿随心</small><i aria-hidden="true">→</i></Link>
               </nav>
               <div className="menu-theme"><span><small>外观主题</small><b>{theme === "light" ? "宣纸浅色" : "玄青深色"}</b></span><button type="button" onClick={toggleTheme} aria-label="切换外观主题" aria-pressed={theme === "dark"}><span className="theme-switch-thumb" /><i>浅</i><i>深</i></button></div>
               <p className="menu-version">玄枢 V1.0 · FREE & OPEN SOURCE</p>

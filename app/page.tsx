@@ -49,6 +49,22 @@ export default function Home() {
         </motion.div>
       </section>
       <section className="rules-note" id="about"><BrandMark /><h2>排盘有据，解读有路</h2><p>玄枢按传统规则计算排盘，记录保存在本机。五种术数都能复制 AI 提示词，把完整数据交给你常用的 AI 解释。</p><div><span>免费开源</span><span>本机记录</span><span>复制问 AI</span></div></section>
+      <section className="support-section" id="support" aria-labelledby="support-title">
+        <div className="support-copy">
+          <span className="support-tea" aria-hidden="true">🍵</span>
+          <h2 id="support-title">一起为爱发电</h2>
+          <p>如果玄枢对你有帮助，欢迎请作者喝杯茶，<br className="support-desktop-break" />支持日常维护与新功能开发。</p>
+          <p className="support-voluntary">完全自愿，金额随意。所有功能始终免费使用。</p>
+          <a className="support-star" href="https://github.com/pilipala5/xuanshu" target="_blank" rel="noopener noreferrer">点一颗 Star，也是一份支持 <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure className="support-code">
+          <a href="/assets/support/wechat-support.jpg" target="_blank" rel="noopener noreferrer" aria-label="查看作者的微信收款码原图">
+            <img src="/assets/support/wechat-support.jpg" alt="作者提供的微信收款二维码，用于自愿支持玄枢维护与开发" width="828" height="1124" loading="lazy" decoding="async" />
+          </a>
+          <figcaption>微信扫一扫 · 手机可保存后在微信识别</figcaption>
+          <a className="support-save" href="/assets/support/wechat-support.jpg" download="玄枢-自愿支持-微信收款码.jpg">保存收款码</a>
+        </figure>
+      </section>
       <footer><span>玄枢 · XUANSHU</span><p>准 · 美 · 顺</p></footer>
     </main>
   );
