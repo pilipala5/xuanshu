@@ -22,54 +22,57 @@
 </p>
 
 <p align="center">
+  <strong>公网体验：</strong><a href="https://47.117.103.246:8443/">https://47.117.103.246:8443/</a><br />
+  <sub>浏览器直接打开即可使用，无需安装。</sub>
+</p>
+
+<p align="center">
   <a href="https://47.117.103.246:8443/"><img src="docs/images/home-desktop.jpg" width="960" alt="玄枢首页：山水背景与五门术数入口，点击在线体验" /></a>
 </p>
 
-玄枢是一个开源的东方术数排盘工具。填写输入、查看排盘、核对规则，在一个工作台内完成。
+<p align="center">玄枢是一个开源的东方术数排盘工具。<br />填写输入、查看排盘、核对规则，在一个工作台内完成。</p>
 
-| 清晰排盘 | 随时回看 | 多端使用 |
-| :---: | :---: | :---: |
-| 规则可查，步骤可复算 | 本机历史，复制与导出 | 桌面 / 手机，浅色 / 深色 |
+<table align="center">
+  <tr><th align="center">清晰排盘</th><th align="center">随时回看</th><th align="center">多端使用</th></tr>
+  <tr><td align="center">规则可查，步骤可复算</td><td align="center">本机历史，复制与导出</td><td align="center">桌面 / 手机，浅色 / 深色</td></tr>
+</table>
 
 <a id="features"></a>
 
-## 一览 · 五门术数
+<h2 align="center">一览 · 五门术数</h2>
 
-| 术数 | 输入 | 核心功能 |
-| :--- | :--- | :--- |
-| **六爻** | 所问之事，六次三钱投掷 | 本卦 / 变卦、爻位明细、PNG 摘要、解读提示词 |
-| **四柱八字** | 出生日期、时间、性别 | 四柱、十神、大运 / 流年，可选换日规则 |
-| **紫微斗数** | 出生信息，可选流年 | 十二宫、星曜 / 四化、本命与流年叠盘 |
-| **梅花易数** | 两个整数 | 本 / 互 / 变卦、体用、取余步骤 |
-| **小六壬** | 日期、时间 | 月 / 日 / 时顺推、六宫落点 |
+<table align="center">
+  <tr><th>术数</th><th>输入</th><th>核心功能</th></tr>
+  <tr><td><strong>六爻</strong></td><td>所问之事，六次三钱投掷</td><td>本卦 / 变卦、爻位明细、PNG 摘要、解读提示词</td></tr>
+  <tr><td><strong>四柱八字</strong></td><td>出生日期、时间、性别</td><td>四柱、十神、大运 / 流年，可选换日规则</td></tr>
+  <tr><td><strong>紫微斗数</strong></td><td>出生信息，可选流年</td><td>十二宫、星曜 / 四化、本命与流年叠盘</td></tr>
+  <tr><td><strong>梅花易数</strong></td><td>两个整数</td><td>本 / 互 / 变卦、体用、取余步骤</td></tr>
+  <tr><td><strong>小六壬</strong></td><td>日期、时间</td><td>月 / 日 / 时顺推、六宫落点</td></tr>
+</table>
 
 <a id="demo"></a>
 
-## 一瞥 · 界面与操作
+<h2 align="center">一瞥 · 界面与操作</h2>
 
 <p align="center">
   <img src="docs/images/workbench-demo.gif" width="960" alt="真实页面关键帧：填写输入、生成排盘、查看结果" /><br />
   <sub>实际页面截图组成的关键帧演示 · 均为公开测试样例</sub>
 </p>
 
-<details>
-<summary><strong>展开查看：八字与紫微排盘</strong></summary>
+<h3 align="center">八字与紫微排盘</h3>
 
-<table>
+<table align="center">
   <tr>
     <td width="50%" align="center"><strong>四柱八字</strong><br /><br /><a href="docs/images/bazi-full.jpg"><img src="docs/images/bazi-desktop.jpg" width="520" alt="八字样例：庚午、壬午、辛亥、甲午四柱" /></a></td>
     <td width="50%" align="center"><strong>紫微斗数</strong><br /><br /><a href="docs/images/ziwei-full.jpg"><img src="docs/images/ziwei-desktop.jpg" width="520" alt="紫微样例：十二宫与 2026 年流年叠盘" /></a></td>
   </tr>
 </table>
 
-样例：1990-06-15 · 12:00 · 男 · 流年 2026；八字选择 00:00 换日。点击图片查看完整排盘。
+<p align="center"><sub>样例：1990-06-15 · 12:00 · 男 · 流年 2026；八字选择 00:00 换日。<br />点击图片查看完整排盘。</sub></p>
 
-</details>
+<h3 align="center">手机、深色主题与历史</h3>
 
-<details>
-<summary><strong>展开查看：手机、深色主题与历史</strong></summary>
-
-<table>
+<table align="center">
   <tr>
     <td width="50%" align="center"><strong>手机首页</strong><br /><br /><img src="docs/images/home-mobile.jpg" width="240" alt="手机首页与五门术数入口" /></td>
     <td width="50%" align="center"><strong>手机紫微</strong><br /><br /><img src="docs/images/ziwei-mobile.jpg" width="240" alt="手机紫微命盘与宫位详情" /></td>
@@ -80,11 +83,9 @@
   </tr>
 </table>
 
-</details>
-
 <a id="quick-start"></a>
 
-## 上手 · 本地运行
+<h2 align="center">上手 · 本地运行</h2>
 
 需要 **Node.js ≥ 22.13.0**。
 
@@ -97,8 +98,7 @@ npm run dev -- --hostname 127.0.0.1 --port 5173
 
 打开 [localhost:5173](http://127.0.0.1:5173)。无需数据库或 API Key。
 
-<details>
-<summary><strong>开发与部署</strong></summary>
+<h3 align="center">开发与部署</h3>
 
 检查：`npm test` · `npx tsc --noEmit` · `npm run lint` · `npm run build`。
 
@@ -113,11 +113,15 @@ HOST=127.0.0.1 PORT=3011 node dist/standalone/server.js
 
 生产配置与 HTTPS 见 [部署指南](docs/deployment.md)。
 
-</details>
+<h2 align="center">深入 · 文档与贡献</h2>
 
-## 深入 · 文档与贡献
-
-[使用指南](docs/usage.md) &nbsp; · &nbsp; [计算口径](docs/calculation-rules.md) &nbsp; · &nbsp; [自行部署](docs/deployment.md) &nbsp; · &nbsp; [参与贡献](CONTRIBUTING.md) &nbsp; · &nbsp; [问题反馈](https://github.com/pilipala5/xuanshu/issues)
+<p align="center">
+  <a href="docs/usage.md">使用指南</a> &nbsp; · &nbsp;
+  <a href="docs/calculation-rules.md">计算口径</a> &nbsp; · &nbsp;
+  <a href="docs/deployment.md">自行部署</a> &nbsp; · &nbsp;
+  <a href="CONTRIBUTING.md">参与贡献</a> &nbsp; · &nbsp;
+  <a href="https://github.com/pilipala5/xuanshu/issues">问题反馈</a>
+</p>
 
 - **数据在本机**：输入与排盘记录不上传；历史仅在当前浏览器、当前站点可读，清除站点数据后无法自动找回。
 - **规则有边界**：取法与时间约定见计算口径；当前不提供真太阳时校正、自动吉凶判断或 AI 解读。
@@ -125,9 +129,9 @@ HOST=127.0.0.1 PORT=3011 node dist/standalone/server.js
 
 <a id="support"></a>
 
-## 同行 · 支持玄枢
+<h2 align="center">同行 · 支持玄枢</h2>
 
-喜欢玄枢，欢迎点一个 **Star ⭐**；关注更新，可在仓库右上角选择 **Watch → Custom**，按需订阅通知。
+<p align="center">喜欢玄枢，欢迎点一个 <strong>Star ⭐</strong>。<br />关注更新，可在仓库右上角选择 <strong>Watch → Custom</strong>，按需订阅通知。</p>
 
 <p align="center">
   <a href="https://github.com/pilipala5/xuanshu"><img src="https://img.shields.io/badge/Star-%E6%94%AF%E6%8C%81%E7%8E%84%E6%9E%A2-b89b62?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="为玄枢点 Star" /></a>
@@ -135,19 +139,27 @@ HOST=127.0.0.1 PORT=3011 node dist/standalone/server.js
   <a href="https://www.star-history.com/#pilipala5/xuanshu&amp;Date"><img src="https://img.shields.io/badge/Star_History-%E6%98%9F%E6%A0%87%E8%B6%8B%E5%8A%BF-64766b?style=for-the-badge" alt="查看 Star 数增长趋势" /></a>
 </p>
 
-### 🍵 自愿资助
+<h3 align="center">星标趋势</h3>
 
-所有功能免费使用。如果愿意支持维护与开发，欢迎请作者喝杯茶。**完全自愿，金额随意。**
+<p align="center">
+  <a href="https://www.star-history.com/#pilipala5/xuanshu&amp;Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=pilipala5/xuanshu&amp;type=date&amp;legend=top-left&amp;theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=pilipala5/xuanshu&amp;type=date&amp;legend=top-left" />
+      <img src="https://api.star-history.com/chart?repos=pilipala5/xuanshu&amp;type=date&amp;legend=top-left" width="800" alt="玄枢 GitHub Star 数随时间变化的趋势图，由 Star History 自动更新" />
+    </picture>
+  </a><br />
+  <sub>项目刚上线，星标趋势会随 Star 自动更新。</sub>
+</p>
 
-<details>
-<summary><strong>展开微信收款码</strong></summary>
+<h3 align="center">🍵 自愿资助</h3>
+
+<p align="center">所有功能免费使用，欢迎请作者喝杯茶，支持维护与开发。<br /><strong>完全自愿，金额随意。</strong></p>
 
 <p align="center">
   <a href="docs/images/wechat-support.jpg"><img src="docs/images/wechat-support.jpg" width="280" alt="作者提供的微信收款码，用于自愿资助玄枢" /></a><br />
   <sub>微信扫码 · 点击查看原图</sub>
 </p>
-
-</details>
 
 ---
 
