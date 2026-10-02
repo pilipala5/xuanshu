@@ -27,29 +27,28 @@ export default function Home() {
           ))}
         </div>
         <motion.div className="hero-copy" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .55 }}>
-          <p className="kicker">规则为骨 · 美学为形</p>
+          <p className="kicker">玄枢 · 东方术数排盘</p>
           <h1>心静意诚<br />万象自明</h1>
-          <p className="subtitle">东方术数排盘与推演工具</p>
+          <p className="subtitle">选一种术数，生成排盘。看不懂，就复制给 AI。</p>
         </motion.div>
         <XuanShuInstrument />
-        <a className="primary-button" href="#methods"><span>探索术数</span><i aria-hidden="true">⌄</i></a>
+        <a className="primary-button" href="#methods"><span>选择排盘方式</span><i aria-hidden="true">⌄</i></a>
       </section>
       <section className="methods" id="methods">
-        <div className="section-heading"><span>壹</span><div><p>选择术数</p><h2>从一个真实的问题开始</h2></div></div>
+        <div className="section-heading"><div><h2>从这里开始</h2><p>问一件事，或了解一份命盘。选好方式，按提示填写即可。</p></div></div>
         <motion.div className="method-list" initial="idle" whileInView="visible" viewport={{ once: true, amount: .16 }} variants={{ idle: {}, visible: { transition: { staggerChildren: .055 } } }}>
           {methods.map((method, index) => (
             <motion.a className={`method-card method-${method.id}`} href={method.status === "available" ? method.route : "#methods"} key={method.id} variants={{ idle: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0, transition: { duration: .46, ease: [0.22, 1, 0.36, 1] } } }}>
               <div className="method-visual">
                 <img src={method.visual} alt="" width="768" height="768" loading={index === 0 ? "eager" : "lazy"} decoding="async" />
-                <span>0{index + 1}</span>
               </div>
-              <div className="method-copy"><small>{method.status === "available" ? "OPEN NOW" : "COMING SOON"}</small><h3>{method.name}</h3><p>{method.subtitle}</p></div>
+              <div className="method-copy"><h3>{method.name}</h3><p>{method.subtitle}</p></div>
               <b aria-hidden="true"><span>→</span></b>
             </motion.a>
           ))}
         </motion.div>
       </section>
-      <section className="rules-note" id="about"><BrandMark /><h2>真实规则，清楚结果</h2><p>核心排盘由确定性程序计算，不依赖生成式 AI。每一次结果都可保存、复算与查验；玄枢只整理 AI 解读提示词，不会上传你的问题。</p><div><span>RULES FIRST</span><span>FREE & OPEN</span><span>LOCAL HISTORY</span></div></section>
+      <section className="rules-note" id="about"><BrandMark /><h2>排盘有据，解读有路</h2><p>玄枢按传统规则计算排盘，记录保存在本机。五种术数都能复制 AI 提示词，把完整数据交给你常用的 AI 解释。</p><div><span>免费开源</span><span>本机记录</span><span>复制问 AI</span></div></section>
       <footer><span>玄枢 · XUANSHU</span><p>准 · 美 · 顺</p></footer>
     </main>
   );

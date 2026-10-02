@@ -4,11 +4,11 @@ import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { HexagramView } from "@/components/HexagramView";
 import { SiteHeader } from "@/components/SiteChrome";
+import { AiReadingCard } from "@/components/AiReadingCard";
 import { Disclosure } from "@/components/ui/Disclosure";
 import type { LiuYaoSession, YaoValue } from "@/features/liuyao/domain/types";
 import { downloadResultImage } from "@/features/liuyao/prompts/downloadImage";
 import { createAiPrompt } from "@/features/liuyao/prompts/createPrompt";
-import { copyText } from "@/features/liuyao/prompts/copyText";
 import { getSession } from "@/features/liuyao/storage/history";
 
 function movingText(lines: number[]): string {
@@ -20,7 +20,7 @@ export function ResultClient({ id }: { id: string }) {
   const [session, setSession] = useState<LiuYaoSession | null>(null);
   const [loading, setLoading] = useState(true);
   const [notice, setNotice] = useState("");
-  const [busyAction, setBusyAction] = useState<"image" | "copy" | null>(null);
+  const [busyAction, setBusyAction] = useState<"image" | null>(null);
   const noticeTimer = useRef<number | null>(null);
 
   useEffect(() => {
@@ -32,19 +32,6 @@ export function ResultClient({ id }: { id: string }) {
     setNotice(message);
     if (noticeTimer.current) window.clearTimeout(noticeTimer.current);
     noticeTimer.current = window.setTimeout(() => setNotice(""), 3200);
-  };
-
-  const copyPrompt = async () => {
-    if (!session) return;
-    setBusyAction("copy");
-    try {
-      await copyText(createAiPrompt(session));
-      showNotice("AI 解读提示词已复制，玄枢未发送任何数据");
-    } catch {
-      showNotice("复制失败，请允许浏览器访问剪贴板");
-    } finally {
-      setBusyAction(null);
-    }
   };
 
   const saveImage = async () => {
@@ -70,8 +57,10 @@ export function ResultClient({ id }: { id: string }) {
       <SiteHeader backHref="/liuyao" title="六爻 · 结果" />
       <div className="result-landscape" aria-hidden="true" />
       <div className="result-shell">
+        <AiReadingCard prompt={createAiPrompt(session)} />
         <motion.section className="result-hero" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
           <p className="result-question"><span>所问</span>{session.question}</p>
+          <p className="result-reading-guide">本卦是起卦得到的卦象；变卦由动爻变化而来。红点标出动爻，下方可查六爻明细。</p>
           <div className="hexagram-transition">
             <article><small>本卦 · 第{session.originalHexagram.number}卦</small><h1>{session.originalHexagram.name}</h1><div className="trigram-pair"><span>{session.originalHexagram.upperSymbol}</span><span>{session.originalHexagram.lowerSymbol}</span></div><HexagramView lines={session.lines} compact /></article>
             <i>→</i>
@@ -88,7 +77,7 @@ export function ResultClient({ id }: { id: string }) {
           <Disclosure title="完整排盘数据" meta="时间与规则版本"><dl><div><dt>起卦方式</dt><dd>{session.metadata.method}</dd></div><div><dt>起卦时间</dt><dd>{session.metadata.calendarDate}</dd></div><div><dt>时区</dt><dd>{session.metadata.timezone}</dd></div><div><dt>原始爻值</dt><dd>[{session.lines.join(", ")}]</dd></div><div><dt>规则版本</dt><dd>{session.metadata.rulesVersion}</dd></div></dl></Disclosure>
         </section>
 
-        <section className="result-actions" aria-busy={busyAction !== null}><button className="action-button action-button-primary" type="button" onClick={() => void saveImage()} disabled={busyAction !== null}><span>{busyAction === "image" ? "正在生成高清长图…" : "保存结果图片"}</span><i aria-hidden="true">↓</i></button><button type="button" className="action-button action-button-secondary prompt-button" onClick={() => void copyPrompt()} disabled={busyAction !== null}><span>{busyAction === "copy" ? "正在复制…" : "复制 AI 解读提示词"}</span><i aria-hidden="true">⧉</i></button><p>仅整理真实排盘数据，不调用 AI，也不向第三方发送。</p></section>
+        <section className="result-actions" aria-busy={busyAction !== null}><button className="action-button action-button-secondary" type="button" onClick={() => void saveImage()} disabled={busyAction !== null}><span>{busyAction === "image" ? "正在生成高清长图…" : "保存结果图片"}</span><i aria-hidden="true">↓</i></button></section>
       </div>
       {notice && <motion.div className="toast" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} role="status" aria-live="polite">{notice}</motion.div>}
       <nav className="bottom-nav" aria-label="结果页面导航"><a href="/liuyao">再起一卦</a><a className="is-active" href={`/liuyao/result/${session.id}`}>卦象</a><a href="/history">记录</a></nav>

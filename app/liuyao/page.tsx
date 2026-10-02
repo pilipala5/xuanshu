@@ -84,8 +84,9 @@ export default function LiuYaoPage() {
       <SiteHeader backHref="/" title="六爻 · 起卦" />
       <div className="ritual-backdrop" aria-hidden="true"><i /><i /></div>
       <div className="ritual-shell">
+        <div className="ritual-guide"><h1>六爻起卦</h1><p>写下问题，自动完成六次投掷。查看卦象后，复制提示词给 AI 解读。</p><ol className="method-workflow" aria-label="使用步骤"><li className={phase === "input" ? "is-current" : "is-done"}><span>1</span>写下问题</li><li className={phase === "casting" ? "is-current" : phase === "complete" ? "is-done" : ""}><span>2</span>自动起卦</li><li className={phase === "complete" ? "is-current" : ""}><span>3</span>查看并问 AI</li></ol></div>
         <section className={`question-card ${phase !== "input" ? "is-locked" : ""}`}>
-          <label htmlFor="question">所问之事</label>
+          <label htmlFor="question">你想问什么？</label>
           <div><textarea id="question" value={question} onChange={(event) => { setQuestion(event.target.value); if (error) setError(""); }} disabled={phase !== "input"} maxLength={80} rows={2} placeholder="例如：最近事业发展如何？" /><span>{question.length}/80</span></div>
           {error && <p className="form-error" role="alert">{error}</p>}
           <small>一事一问，问题越具体，越便于之后阅读卦象。</small>
@@ -113,7 +114,7 @@ export default function LiuYaoPage() {
           <HexagramView lines={[...(visibleLines.length ? visibleLines : [8, 8, 8, 8, 8, 8])] as YaoValue[]} activeCount={visibleLines.length} />
           <AnimatePresence mode="wait">
             {phase === "input" && <motion.button key="start" className="action-button action-button-primary primary-ritual-button" type="button" onClick={beginCasting} initial={{ opacity: 0 }} animate={{ opacity: 1 }}><span>开始起卦<small>三钱六掷</small></span><i aria-hidden="true">→</i></motion.button>}
-            {phase === "casting" && <motion.p key="casting" className="casting-status" initial={{ opacity: 0 }} animate={{ opacity: 1 }}><i aria-hidden="true" />卦象已经锁定，动画只展示计算结果</motion.p>}
+            {phase === "casting" && <motion.p key="casting" className="casting-status" initial={{ opacity: 0 }} animate={{ opacity: 1 }}><i aria-hidden="true" />正在完成六次投掷，请等待卦象生成。</motion.p>}
             {phase === "complete" && session && <motion.div key="complete" className="complete-actions" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}><div><small>本卦</small><strong>{session.originalHexagram.name}</strong><span>→</span><small>变卦</small><strong>{session.changedHexagram.name}</strong></div>{saveState === "error" && <p className="save-error" role="alert">本机记录保存失败，请重试后查看卦象。</p>}<button className="action-button action-button-primary" type="button" onClick={() => void openResult()} disabled={saveState === "saving"}><span>{saveState === "saving" ? "正在保存卦象…" : saveState === "error" ? "重试并查看" : "查看卦象"}</span><i aria-hidden="true">→</i></button><button type="button" className="action-button action-button-secondary secondary-button" onClick={reset} disabled={saveState === "saving"}><span>重新起卦</span></button></motion.div>}
           </AnimatePresence>
         </section>

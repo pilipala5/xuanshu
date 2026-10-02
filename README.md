@@ -34,7 +34,7 @@
 
 <table align="center">
   <tr><th align="center">清晰排盘</th><th align="center">随时回看</th><th align="center">多端使用</th></tr>
-  <tr><td align="center">规则可查，步骤可复算</td><td align="center">本机历史，复制与导出</td><td align="center">桌面 / 手机，浅色 / 深色</td></tr>
+  <tr><td align="center">规则可查，复制提示词问 AI</td><td align="center">本机历史，复制与导出</td><td align="center">桌面 / 手机，浅色 / 深色</td></tr>
 </table>
 
 <a id="features"></a>
@@ -52,12 +52,16 @@
 
 <a id="demo"></a>
 
+<p align="center"><strong>看不懂排盘？</strong> 五种术数都能「复制 AI 提示词」→ 打开常用 AI → 粘贴提问。</p>
+
 <h2 align="center">一瞥 · 界面与操作</h2>
 
 <p align="center">
-  <img src="docs/images/workbench-demo.gif" width="960" alt="真实页面关键帧：填写输入、生成排盘、查看结果" /><br />
-  <sub>实际页面截图组成的关键帧演示 · 均为公开测试样例</sub>
+  <img src="docs/images/ai-reading-desktop.jpg" width="960" alt="新版结果页：卦象与复制 AI 提示词并列，附清晰的粘贴步骤" /><br />
+  <sub>生成排盘 → 复制 AI 提示词 → 粘贴提问 · 公开演示样例</sub>
 </p>
+
+<p align="center"><img src="docs/images/ai-reading-mobile.jpg" width="240" alt="手机结果页：醒目的复制 AI 提示词按钮与使用指引" /></p>
 
 <h3 align="center">八字与紫微排盘</h3>
 

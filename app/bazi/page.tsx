@@ -1,5 +1,6 @@
 "use client";
 
+import { createMethodAiPrompt } from "@/features/ai/createMethodPrompt";
 import { MethodScaffold } from "@/components/methods/MethodScaffold";
 import { BAZI_RULES_VERSION, createBaziResult, type BaziInput, type BaziResult } from "@/features/bazi/engine";
 import { useMethodWorkbench } from "@/features/useMethodWorkbench";
@@ -18,7 +19,7 @@ export default function BaziPage() {
 
   const form = (
     <form className="method-form" onSubmit={workbench.submit}>
-      <div className="method-form-heading"><span>出生信息</span><h2>排定四柱</h2><p>按北京时间（UTC+8）输入出生日期与时间，年柱与月柱以节气边界为准。</p></div>
+      <div className="method-form-heading"><h2>填写出生信息</h2><p>输入公历出生日期、北京时间（UTC+8）与性别；默认选项即可排盘。</p></div>
       <div className="method-field-grid">
         <label><span>公历日期</span><input type="date" min="1900-01-01" max="2100-12-31" required value={workbench.input.date} onChange={(event) => {
           const date = event.target.value;
@@ -39,6 +40,7 @@ export default function BaziPage() {
   const result = workbench.result && (
     <>
       <header className="method-result-heading"><span>四柱排盘</span><div><h2>日主 · {workbench.result.dayMaster}</h2><p>{workbench.result.solarDate} · 北京时间</p><p>{workbench.result.lunarDate} · 属{workbench.result.zodiac}</p></div></header>
+      <p className="method-reading-guide"><strong>日主「{workbench.result.dayMaster}」</strong>是这份八字的参照点。先看年、月、日、时四柱，再看大运与所选流年；十神、藏干等术语可以直接复制给 AI 解释。</p>
       <div className="bazi-pillars">
         {workbench.result.pillars.map((pillar) => <article key={pillar.label}><small>{pillar.label}</small><strong><b>{pillar.gan}</b><b>{pillar.zhi}</b></strong><p>{pillar.shiShen}</p><span>{pillar.wuXing}</span><em>{pillar.naYin}</em></article>)}
       </div>
@@ -57,5 +59,5 @@ export default function BaziPage() {
     </>
   );
 
-  return <MethodScaffold method="bazi" form={form} result={result} notice={workbench.notice} />;
+  return <MethodScaffold aiPrompt={workbench.result ? createMethodAiPrompt({ method: "bazi", input: workbench.input, result: workbench.result }) : undefined} method="bazi" form={form} result={result} notice={workbench.notice} />;
 }

@@ -1,9 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { createMethodAiPrompt } from "@/features/ai/createMethodPrompt";
 import { MethodScaffold } from "@/components/methods/MethodScaffold";
 import { createZiweiResult, ZIWEI_PALACE_SLOTS, ZIWEI_RULES_VERSION, type ZiweiInput, type ZiweiMutagen, type ZiweiResult, type ZiweiStar } from "@/features/ziwei/engine";
 import { useMethodWorkbench } from "@/features/useMethodWorkbench";
+
+const PALACE_TOPICS: Record<string, string> = {
+  命宫: "自我与整体结构", 兄弟: "手足关系", 夫妻: "伴侣关系", 子女: "子女关系", 财帛: "钱财与收支", 疾厄: "传统健康主题", 迁移: "外出与环境变化", 仆役: "朋友与人际关系", 交友: "朋友与人际关系", 官禄: "事业与工作", 田宅: "家庭与居所", 福德: "精神状态与内在感受", 父母: "父母与长辈关系",
+};
 
 function starText(star: ZiweiStar): string {
   return `${star.name}${star.brightness ? `（${star.brightness}）` : ""}${star.mutagen ? `·生年化${star.mutagen}` : ""}`;
@@ -25,6 +30,7 @@ function ZiweiChart({ chart }: { chart: ZiweiResult }) {
 
   return <>
     <header className="method-result-heading"><span>本命十二宫</span><div><h2>{chart.fiveElementsClass}</h2><p>{chart.inputSolarDate} · {chart.timeLabel}</p><p>{chart.lunarDate}</p></div></header>
+    <p className="method-reading-guide">先看<strong>命宫</strong>了解整体结构；看事业点<strong>官禄宫</strong>，看钱财点<strong>财帛宫</strong>。点选后，下方显示该宫详情。{flow ? `「流年」标签对应 ${flow.year} 年。` : "流年年份可在输入区选填。"}</p>
     {chart.legacyLateZi && <p className="method-formula">此历史记录保留旧版晚子时结果。重新排盘将按次日历法计算。</p>}
     <p className="method-chart-hint">点选宫位，展开完整星曜 <span>大限年龄按虚岁</span></p>
     <div className="ziwei-board" aria-label="紫微本命十二宫命盘">
@@ -45,6 +51,7 @@ function ZiweiChart({ chart }: { chart: ZiweiResult }) {
     </div>
     <section id="ziwei-palace-detail" className="method-data-section ziwei-palace-detail" aria-live="polite" aria-atomic="true">
       <div className="method-section-title"><span>本命 · {selectedPalace.name}</span><small>{selectedPalace.stemBranch}{selectedPalace.isBodyPalace ? " · 身宫" : ""}</small></div>
+      <p className="method-palace-topic">传统上用于讨论{PALACE_TOPICS[selectedPalace.name] ?? "相关人生主题"}。不熟悉下方星曜？复制完整排盘给 AI，询问这个宫位即可。</p>
       <div className="ziwei-star-groups"><StarGroup label="主星" stars={selectedPalace.majorStars} /><StarGroup label="辅星" stars={selectedPalace.minorStars} /><StarGroup label="杂曜" stars={selectedPalace.adjectiveStars} /></div>
       <div className="method-fact-strip"><div><span>十二长生</span><b>{selectedPalace.changsheng12}</b></div><div><span>大限（虚岁）</span><b>{selectedPalace.decadal[0]}–{selectedPalace.decadal[1]} 岁</b></div><div><span>博士十二神</span><b>{selectedPalace.boshi12}</b></div></div>
       <p className="method-rule-note">本命将前：{selectedPalace.jiangqian12} · 本命岁前：{selectedPalace.suiqian12}。星曜旁的亮度与生年四化属于本命盘。</p>
@@ -81,7 +88,7 @@ export default function ZiweiPage() {
 
   const form = (
     <form className="method-form" onSubmit={workbench.submit}>
-      <div className="method-form-heading"><span>出生信息</span><h2>安十二宫</h2><p>使用公历出生日期、当地钟表时间和性别生成本命盘；填写流年年份可叠加年度宫位与四化。</p></div>
+      <div className="method-form-heading"><h2>填写出生信息</h2><p>输入公历出生日期、出生时的钟表时间与性别。想看某一年，可选填流年年份。</p></div>
       <div className="method-field-grid"><label><span>公历日期</span><input type="date" min="1900-01-01" max="2100-12-31" required value={workbench.input.date} onChange={(event) => workbench.updateInput("date", event.target.value)} /></label><label><span>出生时间</span><input type="time" required value={workbench.input.time} onChange={(event) => workbench.updateInput("time", event.target.value)} /></label></div>
       <fieldset><legend>性别</legend><div className="segmented-control"><label><input type="radio" name="ziwei-gender" checked={workbench.input.gender === "男"} onChange={() => workbench.updateInput("gender", "男")} /><span>男</span></label><label><input type="radio" name="ziwei-gender" checked={workbench.input.gender === "女"} onChange={() => workbench.updateInput("gender", "女")} /><span>女</span></label></div></fieldset>
       <details className="method-options"><summary><span>流年叠盘</span><small>可选年份</small><i aria-hidden="true">⌄</i></summary><div className="ziwei-horoscope-controls"><label><span>流年年份（选填）</span><input type="number" min="1900" max="2100" step="1" placeholder="例如 2026" value={workbench.input.flowYear ?? ""} onChange={(event) => workbench.updateInput("flowYear", event.target.value)} /></label><p className="method-rule-note">留空查看本命盘；流年按农历正月初一换年。</p></div></details>
@@ -91,5 +98,5 @@ export default function ZiweiPage() {
   );
 
   const result = workbench.result && <ZiweiChart key={`${workbench.result.solarDate}-${workbench.result.timeRange}-${workbench.result.gender}`} chart={workbench.result} />;
-  return <MethodScaffold method="ziwei" form={form} result={result} notice={workbench.notice} />;
+  return <MethodScaffold aiPrompt={workbench.result ? createMethodAiPrompt({ method: "ziwei", input: workbench.input, result: workbench.result }) : undefined} method="ziwei" form={form} result={result} notice={workbench.notice} />;
 }
