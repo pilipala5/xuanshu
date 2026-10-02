@@ -1,35 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" fill="none" role="img" aria-labelledby="title description">
-  <title id="title">玄枢 XUANSHU</title>
-  <desc id="description">东方术数排盘，规则可复算。支持六爻、八字、紫微斗数、梅花易数与小六壬。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">玄枢 XUANSHU · 五门术数，一处排盘</title>
+  <desc id="description">墨绿与金色的东方术数品牌横幅，右侧为玄枢原始品牌图形与环形星轨。支持六爻、四柱八字、紫微斗数、梅花易数与小六壬。</desc>
   <defs>
-    <linearGradient id="paper" x1="0" y1="0" x2="960" y2="260" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F8F7F2"/>
-      <stop offset="0.55" stop-color="#FBFAF6"/>
-      <stop offset="1" stop-color="#EFF3ED"/>
+    <linearGradient id="ink" x1="0" y1="0" x2="960" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C302A"/>
+      <stop offset="1" stop-color="#314B3F"/>
     </linearGradient>
     <linearGradient id="gold" x1="40" y1="30" x2="210" y2="224" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#C5A46B"/>
-      <stop offset="1" stop-color="#A98245"/>
+      <stop stop-color="#D8C399"/>
+      <stop offset="1" stop-color="#B6975C"/>
     </linearGradient>
     <linearGradient id="jade" x1="80" y1="74" x2="176" y2="182" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8FA79A"/>
-      <stop offset="1" stop-color="#5F7D70"/>
+      <stop stop-color="#A6B9A1"/>
+      <stop offset="1" stop-color="#688976"/>
     </linearGradient>
-    <radialGradient id="wash" cx="0" cy="0" r="1" gradientTransform="translate(482 68) scale(262 144)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#E5EDE3" stop-opacity="0.56"/>
-      <stop offset="1" stop-color="#E5EDE3" stop-opacity="0"/>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(754 144) scale(220 220)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9B68B" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#A9B68B" stop-opacity="0"/>
     </radialGradient>
   </defs>
+  <rect width="960" height="320" rx="18" fill="url(#ink)"/>
+  <rect x="1" y="1" width="958" height="318" rx="17" stroke="#C4AF7E" stroke-opacity=".22"/>
+  <rect x="1" y="1" width="958" height="318" rx="17" fill="url(#glow)"/>
+  <path d="M32 54V32H54M906 32H928V54M32 266V288H54M906 288H928V266" stroke="#C4AF7E" stroke-opacity=".45"/>
 
-  <rect width="960" height="260" rx="18" fill="url(#paper)"/>
-  <rect x="0.5" y="0.5" width="959" height="259" rx="17.5" stroke="#DDE3D9"/>
-  <rect x="1" y="1" width="958" height="258" rx="17" fill="url(#wash)"/>
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+    <text x="66" y="65" fill="#CEBC95" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" letter-spacing="5">XUANSHU / OPEN SOURCE</text>
+    <text x="62" y="151" fill="#F3F0E5" font-family="'Songti SC','Noto Serif SC','STSong',serif" font-size="76" font-weight="600" letter-spacing="16">玄枢</text>
+    <path d="M66 178H108" stroke="#C4AF7E" stroke-width="2"/>
+    <text x="123" y="184" fill="#DEDEC9" font-size="19" letter-spacing="3">东方术数排盘工作台</text>
+    <text x="66" y="219" fill="#ADBCAB" font-size="13" letter-spacing="2">起卦 · 排盘 · 核对 · 留存</text>
+  </g>
 
-  <!-- The project's original brand mark, kept as vector paths. -->
-  <svg x="330" y="25" width="104" height="104" viewBox="0 0 256 256" fill="none">
+  <!-- Original project mark, surrounded by decorative celestial rings. -->
+  <g stroke="#C4AF7E" stroke-opacity=".3">
+    <circle cx="754" cy="140" r="102"/>
+    <circle cx="754" cy="140" r="118" stroke-dasharray="1 10"/>
+    <ellipse cx="754" cy="140" rx="155" ry="49" transform="rotate(-32 754 140)"/>
+    <path d="M754 14V24M754 256V266M628 140H638M870 140H880"/>
+  </g>
+  <g fill="#CFB982">
+    <circle cx="693" cy="55" r="3"/>
+    <circle cx="839" cy="196" r="3"/>
+    <circle cx="600" cy="224" r="2" opacity=".6"/>
+    <circle cx="894" cy="60" r="2" opacity=".6"/>
+  </g>
+  <svg x="665" y="51" width="178" height="178" viewBox="0 0 256 256" fill="none">
     <path d="M50 181C30 156 22 126 29 96C36 66 58 42 86 31C111 21 139 22 162 32" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
     <path d="M174 38C196 53 214 76 222 102C230 129 226 158 213 181C199 206 175 223 148 229C123 235 96 231 74 219" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
-    <circle cx="128" cy="128" r="48" fill="url(#jade)" opacity="0.92"/>
+    <circle cx="128" cy="128" r="48" fill="url(#jade)" opacity=".92"/>
     <path d="M128 62V194" stroke="#26342F" stroke-width="4" stroke-linecap="round"/>
     <circle cx="128" cy="128" r="16" fill="url(#gold)" stroke="#F5F2EA" stroke-width="6"/>
     <circle cx="128" cy="58" r="10" fill="url(#gold)"/>
@@ -38,54 +57,16 @@
     <circle cx="54" cy="196" r="11" fill="url(#gold)"/>
   </svg>
 
-  <text x="448" y="82" fill="#293E35" font-family="'Noto Serif SC','Songti SC','STSong',serif" font-size="43" font-weight="600" letter-spacing="9">玄枢</text>
-  <text x="450" y="110" fill="#8D754B" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="500" letter-spacing="4.3">XUANSHU</text>
-  <text x="480" y="150" text-anchor="middle" fill="#68776A" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" letter-spacing="2">东方术数排盘 · 规则可复算</text>
-
-  <path d="M96 179H864" stroke="#DAE2D7"/>
-  <g fill="#3A5346" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="15" font-weight="500">
-    <!-- Six yao lines, including broken yin lines. -->
-    <g transform="translate(186 201)">
-      <g fill="none" stroke="#6C8978" stroke-width="1.7" stroke-linecap="round">
-        <path d="M-42 0H-16M-42 5H-32M-26 5H-16M-42 10H-16M-42 15H-32M-26 15H-16M-42 20H-16M-42 25H-32M-26 25H-16"/>
-      </g>
-      <text x="-3" y="19">六爻</text>
-    </g>
-    <!-- Four pillars. -->
-    <g transform="translate(330 201)">
-      <g fill="none" stroke="#6C8978" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M-42 25H-16M-40 4H-36V25H-40ZM-33 0H-29V25H-33ZM-26 7H-22V25H-26ZM-19 3H-15V25H-19"/>
-      </g>
-      <text x="-3" y="19">八字</text>
-    </g>
-    <!-- A constellation within the celestial sphere. -->
-    <g transform="translate(474 201)">
-      <g fill="none" stroke="#6C8978" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="-29" cy="12.5" r="13"/>
-        <path d="M-36 16L-30 6L-23 11L-29 19"/>
-        <circle cx="-36" cy="16" r="1.6" fill="#FBFAF6"/>
-        <circle cx="-30" cy="6" r="1.6" fill="#FBFAF6"/>
-        <circle cx="-23" cy="11" r="1.6" fill="#FBFAF6"/>
-        <circle cx="-29" cy="19" r="1.6" fill="#FBFAF6"/>
-      </g>
-      <text x="-3" y="19">紫微</text>
-    </g>
-    <!-- Five plum petals around a single center. -->
-    <g transform="translate(618 201)">
-      <g fill="none" stroke="#6C8978" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M-29 8C-37 0-28-5-25 4C-17-1-13 9-22 11C-16 18-24 24-28 17C-32 25-42 20-36 13C-45 9-39 1-32 7"/>
-        <circle cx="-29" cy="11.5" r="2.5"/>
-        <path d="M-24 20L-20 25"/>
-      </g>
-      <text x="-3" y="19">梅花</text>
-    </g>
-    <!-- The six positions of the palm-counting cycle. -->
-    <g transform="translate(762 201)">
-      <g fill="none" stroke="#6C8978" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M-29 0L-18 6.5V19L-29 25L-40 19V6.5ZM-29 12.5L-18 6.5"/>
-        <circle cx="-29" cy="12.5" r="2" fill="#6C8978"/>
-      </g>
-      <text x="-3" y="19">小六壬</text>
-    </g>
+  <path d="M66 250H894" stroke="#C4AF7E" stroke-opacity=".24"/>
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" fill="#D7DCCB" letter-spacing="2" text-anchor="middle">
+    <text x="139" y="283">六爻</text>
+    <text x="305" y="283">四柱八字</text>
+    <text x="471" y="283">紫微斗数</text>
+    <text x="637" y="283">梅花易数</text>
+    <text x="803" y="283">小六壬</text>
+  </g>
+  <g fill="#C4AF7E" opacity=".5">
+    <circle cx="222" cy="278" r="1.5"/><circle cx="388" cy="278" r="1.5"/>
+    <circle cx="554" cy="278" r="1.5"/><circle cx="720" cy="278" r="1.5"/>
   </g>
 </svg>
